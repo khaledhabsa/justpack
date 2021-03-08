@@ -1,0 +1,46 @@
+{
+ "creation": "2021-02-19 15:33:45.346933",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "guest",
+  "photoes"
+ ],
+ "fields": [
+  {
+   "fieldname": "guest",
+   "fieldtype": "Link",
+   "label": "Guest",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "photoes",
+   "fieldtype": "Attach",
+   "label": "Photoes"
+  }
+ ],
+ "modified": "2021-02-19 15:33:48.422907",
+ "modified_by": "Administrator",
+ "module": "BNB",
+ "name": "ID Photoes",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

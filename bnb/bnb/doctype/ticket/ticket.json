@@ -1,0 +1,424 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2021-02-19 16:23:33.171709",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "resort_name",
+  "unit_name",
+  "summary",
+  "column_break_5",
+  "due",
+  "urgency",
+  "ticket_type",
+  "ticket_sub_type",
+  "accept",
+  "reject",
+  "section_break_12",
+  "general",
+  "col1",
+  "specific_info",
+  "col13",
+  "images",
+  "col2",
+  "money_collections",
+  "column_break_20",
+  "resolution",
+  "column_break_22",
+  "rating",
+  "general_section",
+  "open_date",
+  "owner",
+  "owner_department",
+  "assigned_work_group",
+  "column_break_16",
+  "assignee",
+  "cc",
+  "criticality",
+  "specific_info_section",
+  "who_is_there",
+  "preferred_time",
+  "images_section",
+  "pictures_list",
+  "money_collections_section",
+  "amount_collected",
+  "collection_details",
+  "resolution_section",
+  "resolution_comment",
+  "amount_paid",
+  "payment_details",
+  "rating_section",
+  "quality_rating",
+  "quality_comment",
+  "section_break_33",
+  "more_details",
+  "description",
+  "ticket_status",
+  "cancellation_reason",
+  "reservation_link",
+  "etc",
+  "arrtime",
+  "arrival_time_comment",
+  "scheduled_time",
+  "time_started",
+  "time_finished",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "ID",
+   "no_copy": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "resort_name",
+   "fieldtype": "Link",
+   "label": "Resort ",
+   "options": "Resort"
+  },
+  {
+   "fieldname": "unit_name",
+   "fieldtype": "Link",
+   "label": "Unit ",
+   "options": "Unit"
+  },
+  {
+   "fieldname": "due",
+   "fieldtype": "Datetime",
+   "label": "Due Date / Time"
+  },
+  {
+   "fieldname": "ticket_type",
+   "fieldtype": "Link",
+   "label": "Ticket Type",
+   "options": "Ticket Type"
+  },
+  {
+   "fieldname": "ticket_sub_type",
+   "fieldtype": "Link",
+   "label": "Ticket Sub Type",
+   "options": "Ticket Sub Type"
+  },
+  {
+   "fieldname": "open_date",
+   "fieldtype": "Date",
+   "label": "Open Date"
+  },
+  {
+   "fieldname": "urgency",
+   "fieldtype": "Select",
+   "label": "Urgency",
+   "options": "High\nMedium\nLow"
+  },
+  {
+   "fieldname": "more_details",
+   "fieldtype": "Small Text",
+   "label": "More Details"
+  },
+  {
+   "fieldname": "accept",
+   "fieldtype": "Button",
+   "label": "Accept"
+  },
+  {
+   "fieldname": "reject",
+   "fieldtype": "Button",
+   "label": "Reject"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Link",
+   "label": "Owner",
+   "options": "Owner Info"
+  },
+  {
+   "fetch_from": "owner.department",
+   "fieldname": "owner_department",
+   "fieldtype": "Data",
+   "label": "Owner Department"
+  },
+  {
+   "fieldname": "assigned_work_group",
+   "fieldtype": "Data",
+   "label": "Assigned Work Group"
+  },
+  {
+   "fieldname": "assignee",
+   "fieldtype": "Link",
+   "label": "Assignee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "cc",
+   "fieldtype": "Data",
+   "label": "CC"
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "Small Text",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "criticality",
+   "fieldtype": "Select",
+   "label": "Criticality",
+   "options": "Crisis\nEscalation\nNormal"
+  },
+  {
+   "fieldname": "ticket_status",
+   "fieldtype": "Select",
+   "label": "Ticket Status",
+   "options": "Assigned\nAccepted\nClosed\nRe-Opened\nRejected\nCancelled\nArchived"
+  },
+  {
+   "depends_on": "ticket_status==\"Cancelled\"",
+   "fieldname": "cancellation_reason",
+   "fieldtype": "Small Text",
+   "label": "Cancellation Reason"
+  },
+  {
+   "fieldname": "reservation_link",
+   "fieldtype": "Link",
+   "label": "Reservation Link",
+   "options": "Reservation"
+  },
+  {
+   "fieldname": "etc",
+   "fieldtype": "Datetime",
+   "label": "ETC (Date/Time)"
+  },
+  {
+   "fieldname": "resolution_comment",
+   "fieldtype": "Small Text",
+   "label": "Resolution Comment"
+  },
+  {
+   "fieldname": "amount_paid",
+   "fieldtype": "Currency",
+   "label": "Amount Paid"
+  },
+  {
+   "fieldname": "payment_details",
+   "fieldtype": "Data",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "pictures_list",
+   "fieldtype": "Table",
+   "label": "Pictures List",
+   "options": "Pictures List"
+  },
+  {
+   "fieldname": "arrtime",
+   "fieldtype": "Date",
+   "label": "Arrival time (min)"
+  },
+  {
+   "fieldname": "arrival_time_comment",
+   "fieldtype": "Small Text",
+   "label": "Arrival time Comment"
+  },
+  {
+   "fieldname": "who_is_there",
+   "fieldtype": "Select",
+   "label": "Who is there",
+   "options": "Owner\nGuest\nFree"
+  },
+  {
+   "fieldname": "preferred_time",
+   "fieldtype": "Time",
+   "label": "Preferred Time"
+  },
+  {
+   "fieldname": "scheduled_time",
+   "fieldtype": "Datetime",
+   "label": "Scheduled Time"
+  },
+  {
+   "fieldname": "time_started",
+   "fieldtype": "Time",
+   "label": "Time Started"
+  },
+  {
+   "fieldname": "time_finished",
+   "fieldtype": "Time",
+   "label": "Time Finished"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comment on time started/finished"
+  },
+  {
+   "fieldname": "quality_rating",
+   "fieldtype": "Rating",
+   "label": "Quality Rating"
+  },
+  {
+   "fieldname": "quality_comment",
+   "fieldtype": "Small Text",
+   "label": "Quality Comment"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "general_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "General",
+   "print_hide": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "specific_info_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Specific Info",
+   "print_hide": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "images_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Images",
+   "print_hide": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "money_collections_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Money Collections",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "amount_collected",
+   "fieldtype": "Currency",
+   "label": "Amount Collected"
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "resolution_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Resolution",
+   "print_hide": 1
+  },
+  {
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "rating_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Rating",
+   "print_hide": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_33",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "other",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "collection_details",
+   "fieldtype": "Currency",
+   "label": "Collection Details"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "col13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "col2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "general",
+   "fieldtype": "Button",
+   "label": "General"
+  },
+  {
+   "fieldname": "specific_info",
+   "fieldtype": "Button",
+   "label": "Specific Info"
+  },
+  {
+   "fieldname": "images",
+   "fieldtype": "Button",
+   "label": "Images"
+  },
+  {
+   "fieldname": "money_collections",
+   "fieldtype": "Button",
+   "label": "Money Collections"
+  },
+  {
+   "fieldname": "resolution",
+   "fieldtype": "Button",
+   "label": "Resolution"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Button",
+   "label": "Rating"
+  }
+ ],
+ "modified": "2021-02-23 21:58:17.652211",
+ "modified_by": "Administrator",
+ "module": "BNB",
+ "name": "Ticket",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

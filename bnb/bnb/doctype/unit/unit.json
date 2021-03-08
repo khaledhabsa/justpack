@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-02-19 15:27:08.431676",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "resort_name",
+  "unit_name",
+  "unit_type",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "ID",
+   "no_copy": 1,
+   "options": "U-",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "resort_name",
+   "fieldtype": "Link",
+   "label": "Resort ",
+   "options": "Resort"
+  },
+  {
+   "fieldname": "unit_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Unit Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Unit",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "unit_type",
+   "fieldtype": "Select",
+   "label": "Unit Type",
+   "options": "Villa\nTwin\nGarden Duplex\nPenthouse\nGround Garden\nRegular"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-03-06 22:50:51.676349",
+ "modified_by": "Administrator",
+ "module": "BNB",
+ "name": "Unit",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "unit_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-02-19 16:51:53.370954",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "resort",
+  "max_nb_guests",
+  "nb_bedrooms",
+  "owner",
+  "owner_name",
+  "phone",
+  "column_break_5",
+  "image",
+  "unit",
+  "nb_beds",
+  "price_per_nigth",
+  "section_break_8",
+  "owner_rules",
+  "passes_info",
+  "section_break_11",
+  "owner_info",
+  "tickets",
+  "amended_from",
+  "user"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "ID",
+   "options": "P-"
+  },
+  {
+   "fieldname": "resort",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Resort",
+   "options": "Resort"
+  },
+  {
+   "fieldname": "max_nb_guests",
+   "fieldtype": "Int",
+   "label": "Max NB Guests"
+  },
+  {
+   "fieldname": "nb_bedrooms",
+   "fieldtype": "Int",
+   "label": "Nb Bedrooms"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "Unit"
+  },
+  {
+   "fieldname": "nb_beds",
+   "fieldtype": "Int",
+   "label": "Nb Beds"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "owner_rules",
+   "fieldtype": "Small Text",
+   "label": "Owner Rules"
+  },
+  {
+   "fieldname": "passes_info",
+   "fieldtype": "Small Text",
+   "label": "Passes Info"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "owner_info",
+   "fieldtype": "Button",
+   "label": "Owner Info"
+  },
+  {
+   "fieldname": "tickets",
+   "fieldtype": "Button",
+   "label": "Tickets"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Owner",
+   "options": "Owner Info"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Properties",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "owner.phone",
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Owner Mobile",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "owner.owner_name",
+   "fieldname": "owner_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Owner Name",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "owner.user",
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "User",
+   "print_hide": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "price_per_nigth",
+   "fieldtype": "Int",
+   "label": "Price Per Nigth"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "Image"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-03-08 08:31:32.183285",
+ "modified_by": "Administrator",
+ "module": "BNB",
+ "name": "Properties",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

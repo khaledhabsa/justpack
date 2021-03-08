@@ -1,0 +1,253 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-02-19 15:39:33.139699",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "posting_date",
+  "date_from",
+  "type",
+  "properties",
+  "resort_name",
+  "nb_guests",
+  "column_break_6",
+  "date_to",
+  "unit_name",
+  "nights",
+  "status",
+  "payment_status",
+  "addon",
+  "perks",
+  "section_break_12",
+  "section_break_14",
+  "daily_rate",
+  "total_rent",
+  "uday",
+  "total_utilities",
+  "total_perks",
+  "other_charges",
+  "other_charges_details",
+  "total_before_insurance",
+  "column_break_24",
+  "insurance",
+  "to_be_paid",
+  "paid",
+  "remaining",
+  "section_break_29",
+  "ticket",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "ID",
+   "no_copy": 1,
+   "options": "R-",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "resort_name",
+   "fieldtype": "Link",
+   "label": "Resort ",
+   "options": "Resort"
+  },
+  {
+   "fieldname": "unit_name",
+   "fieldtype": "Link",
+   "label": "Unit ",
+   "options": "Unit"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Guest\nOwner\nMaintenance"
+  },
+  {
+   "fieldname": "date_from",
+   "fieldtype": "Date",
+   "label": "Date From"
+  },
+  {
+   "fieldname": "date_to",
+   "fieldtype": "Date",
+   "label": "Date To"
+  },
+  {
+   "fieldname": "nights",
+   "fieldtype": "Int",
+   "label": "Nights"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Reservation Status",
+   "options": "Confirmed\nCancelled\nRemoved"
+  },
+  {
+   "fieldname": "nb_guests",
+   "fieldtype": "Int",
+   "label": "Nb Guests"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break",
+   "label": "Payments"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "addon",
+   "fieldtype": "Section Break",
+   "label": "Add On Requests"
+  },
+  {
+   "fieldname": "perks",
+   "fieldtype": "Table",
+   "label": "Perks",
+   "options": "Perks"
+  },
+  {
+   "fieldname": "daily_rate",
+   "fieldtype": "Currency",
+   "label": "Daily Rate"
+  },
+  {
+   "fieldname": "total_rent",
+   "fieldtype": "Data",
+   "label": "Total Rent"
+  },
+  {
+   "fieldname": "uday",
+   "fieldtype": "Data",
+   "label": "Utilities/Day"
+  },
+  {
+   "fieldname": "total_utilities",
+   "fieldtype": "Data",
+   "label": "Total Utilities"
+  },
+  {
+   "fieldname": "total_perks",
+   "fieldtype": "Data",
+   "label": "Total Perks"
+  },
+  {
+   "fieldname": "other_charges",
+   "fieldtype": "Data",
+   "label": "Other Charges"
+  },
+  {
+   "fieldname": "other_charges_details",
+   "fieldtype": "Small Text",
+   "label": "Other Charges Details"
+  },
+  {
+   "fieldname": "total_before_insurance",
+   "fieldtype": "Data",
+   "label": "Total before Insurance "
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "insurance",
+   "fieldtype": "Data",
+   "label": "Insurance"
+  },
+  {
+   "fieldname": "to_be_paid",
+   "fieldtype": "Data",
+   "label": "To be Paid "
+  },
+  {
+   "fieldname": "paid",
+   "fieldtype": "Data",
+   "label": "Paid"
+  },
+  {
+   "fieldname": "remaining",
+   "fieldtype": "Data",
+   "label": "Remaining"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ticket",
+   "fieldtype": "Table",
+   "label": "Ticket",
+   "options": "Ticket Child"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Reservation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "properties",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Properties",
+   "options": "Properties"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Posting Date",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Pending Deposit\nFull Payment\nDeposit Paid\nCancelled"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-03-08 03:10:32.641828",
+ "modified_by": "Administrator",
+ "module": "BNB",
+ "name": "Reservation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

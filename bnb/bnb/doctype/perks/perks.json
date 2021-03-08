@@ -1,0 +1,37 @@
+{
+ "creation": "2021-02-19 17:29:59.583650",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "perks",
+  "price"
+ ],
+ "fields": [
+  {
+   "fieldname": "perks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "perks",
+   "reqd": 1
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Price",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-19 17:30:08.970403",
+ "modified_by": "Administrator",
+ "module": "BNB",
+ "name": "Perks",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

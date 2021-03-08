@@ -1,0 +1,156 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2021-02-19 15:56:08.525894",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "agent_name",
+  "check_out_time",
+  "house_is_clean",
+  "grade",
+  "welcome_kit_ready",
+  "perks_readyworking",
+  "get_perks_list",
+  "beach_access_rules",
+  "no_unmarried_couples",
+  "nb",
+  "get_nb_of_max_guests_from_property",
+  "payment_done",
+  "remaining",
+  "paid_amount",
+  "comment",
+  "customer_feedback_taken",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "ID",
+   "no_copy": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "agent_name",
+   "fieldtype": "Select",
+   "label": "Agent Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "check_out_time",
+   "fieldtype": "Time",
+   "label": "Check out Time"
+  },
+  {
+   "default": "0",
+   "fieldname": "house_is_clean",
+   "fieldtype": "Check",
+   "label": "House is Clean"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Select",
+   "label": "Grade",
+   "options": "1\n2\n3\n4\n5"
+  },
+  {
+   "default": "0",
+   "fieldname": "welcome_kit_ready",
+   "fieldtype": "Check",
+   "label": "Welcome Kit Ready"
+  },
+  {
+   "default": "0",
+   "fieldname": "perks_readyworking",
+   "fieldtype": "Check",
+   "label": "Perks ReadyWorking"
+  },
+  {
+   "fieldname": "get_perks_list",
+   "fieldtype": "Button",
+   "label": "Get Perks List"
+  },
+  {
+   "default": "0",
+   "fieldname": "beach_access_rules",
+   "fieldtype": "Check",
+   "label": "Beach Access Rules"
+  },
+  {
+   "fieldname": "no_unmarried_couples",
+   "fieldtype": "Data",
+   "label": "No Unmarried Couples"
+  },
+  {
+   "fieldname": "nb",
+   "fieldtype": "Data",
+   "label": "Nb doesn\u2019t exceed capacity"
+  },
+  {
+   "fieldname": "get_nb_of_max_guests_from_property",
+   "fieldtype": "Button",
+   "label": "Get Nb of max guests from Property"
+  },
+  {
+   "default": "0",
+   "fieldname": "payment_done",
+   "fieldtype": "Check",
+   "label": "Payment done"
+  },
+  {
+   "fieldname": "remaining",
+   "fieldtype": "Currency",
+   "label": "Remaining"
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "Paid Amount"
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Small Text",
+   "label": "Comment?"
+  },
+  {
+   "fieldname": "customer_feedback_taken",
+   "fieldtype": "Small Text",
+   "label": "Customer Feedback Taken"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Check Out",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-02-19 15:56:08.525894",
+ "modified_by": "Administrator",
+ "module": "BNB",
+ "name": "Check Out",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
